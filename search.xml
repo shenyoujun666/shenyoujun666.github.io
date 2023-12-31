@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/2023/12/29/mainm/"/>
+      <url>/2023/12/29/mainm/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通过Github Codespaces获取Cookie以及过人机验证</title>
+      <link href="/2023/12/25/codespaces/"/>
+      <url>/2023/12/25/codespaces/</url>
+      
+        <content type="html"><![CDATA[<h1 id="通过Github-Codespaces获取Cookie以及过人机验证"><a href="#通过Github-Codespaces获取Cookie以及过人机验证" class="headerlink" title="通过Github Codespaces获取Cookie以及过人机验证"></a>通过Github Codespaces获取Cookie以及过人机验证</h1><p>闲来无事自己摸索出了一个方法获取BingAI的Cookie以及过人机验证。</p><p>此方法优势：Codespaces永久有效，以便之后重新获取cookie，避免每次都要登录。</p><p>首次使用</p><p>1.点击 <a href="https://githubfast.com/codespaces">https://githubfast.com/codespaces</a> 并创建空白codespaces</p><p>2.创建好后在webIDE的“终端”处输入以下指令并按回车：<br>‘’’bash<br>docker run -p 8080:80 dorowu&#x2F;ubuntu-desktop-lxde-vnc<br>‘’’</p><p>3.首次使用会加载一两分钟，加载完后在页面右下角弹窗点击“在浏览器中打开”</p><p>会进入这样一个远程服务器桌面</p><p>4.配置FireFox</p><p>在左下角启动菜单处打开FireFox火狐浏览器</p><p>注意：这里只能使用自带的火狐浏览器，Edge和Chrome安装不上，可以通过插件让FireFox支持BingAI。<br>复制下面网址，打开网页左侧工具栏，粘贴到“剪贴板”，通过剪贴板实现复制。</p><p><a href="https://addons.mozilla.org/en-US/firefox/addon/enable-bing-chat/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search">https://addons.mozilla.org/en-US/firefox/addon/enable-bing-chat/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search</a></p><p>粘贴到地址栏并访问</p><p>安装Bing插件</p><p>5.访问 <a href="http://www.bing.com/">www.bing.com</a> 并点击Sign in登录微软账号，中途可能会要求验证邮箱，按照他的提示操作即可。</p><p>6.登录后点击 “Chat” 打开BingAI</p><p>7.按F12打开开发者工具，如果F12呼出了外部浏览器的开发者工具，则从菜单栏打开。</p><p>8.找到“Storage”中的“Cookies”</p><p>查找这两个cookies并在“Value”处双击后点复制</p><p>cookie会复制到剪贴板中，自行复制出来使用即可</p><p>9.随便发送一句话就可以过人机验证了。</p><p>非首次使用</p><p>1.点击 <a href="https://githubfast.com/codespaces">https://githubfast.com/codespaces</a> 找到你创建过的codespaces<br>2.直接运行 docker run -p 8080:80 dorowu&#x2F;ubuntu-desktop-lxde-vnc 即可快速打开桌面</p><p>备注</p><p>此方法类似于微软虚拟机，Codespaces安装桌面环境后就相当于是一个永久境外云电脑，可以访问外网。Codespaces每个月最多免费用60小时，已经足够了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>圣诞快乐！</title>
+      <link href="/2023/12/24/cristmas/"/>
+      <url>/2023/12/24/cristmas/</url>
+      
+        <content type="html"><![CDATA[<h1 id="圣诞快乐🎄！"><a href="#圣诞快乐🎄！" class="headerlink" title="圣诞快乐🎄！"></a>圣诞快乐🎄！</h1><iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/%E5%9C%A3%E8%AF%9E%E5%BF%85%E5%A4%87/pl.b0e04e25887741ea845e1d5c88397fd4"></iframe>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/12/23/hello-world/"/>
+      <url>/2023/12/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
